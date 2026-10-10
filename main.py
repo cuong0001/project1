@@ -6,6 +6,14 @@ def isPrime(n):
             return False
     return True
 
+def countPrimes(a):
+    count = 0
+
+    for num in a:
+        if(isPrime(num)):
+            count += 1
+
+    return count
 def sortArray(arr, reverse=False):
     return sorted(arr, reverse=reverse)
 
