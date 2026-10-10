@@ -6,6 +6,15 @@ def isPrime(n):
             return False
     return True
 
+def countPrimes(a):
+    count = 0
+
+    for num in a:
+        if(isPrime(num)):
+            count += 1
+
+    return count
+
 # Nhận một chuỗi các số nguyên từ người dùng, cách nhau bởi dấu cách
 input_str = input("Enter a list of numbers separated by space: ")
 
